@@ -2,13 +2,23 @@ import Image from "next/image"
 import HOUSE_IMAGE from "@/public/assets/house.png"
 import STAR_IMAGE from "@/public/assets/star.png"
 import React from "react"
-import Pill from "./Pill"
+import Pill from "@/components/Pill";
 
 
 const Card: React.FC = () => {
 
  return (
-    <div className="h-[422px] w-[378.56px] cursor-pointer hover:shadow-md hover:rounded-lg ">
+
+  <div className="border rounded-lg p-4 shadow-md w-80">
+      <h2 className="text-lg font-semibold">Property Title</h2>
+      <p className="text-sm text-gray-600">Description of the property</p>
+      
+      <div className="p-2 flex gap-2 mt-2">
+        <Pill title="Top Villa" />
+        <Pill title="Self CheckIn" />
+        <Pill title="Free Reschedule" />
+      </div>
+      <div className="h-[422px] w-[378.56px] cursor-pointer hover:shadow-md hover:rounded-lg ">
       <Image className="rounded-lg" src={HOUSE_IMAGE} width={378.56} height={299.37} alt="house image" />
       <div className="p-2 flex gap-2 mt-2">
         <Pill title="Top Villa" />
@@ -62,6 +72,7 @@ const Card: React.FC = () => {
 
       </div>
     </div>
+  </div>
   )
 }
 

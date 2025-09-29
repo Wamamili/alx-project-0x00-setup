@@ -1,1 +1,3 @@
-// placeholder for future TypeScript interfaces
+export interface PillProps {
+  title: string
+}
