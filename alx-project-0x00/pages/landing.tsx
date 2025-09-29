@@ -14,14 +14,15 @@ const Landing: React.FC = () => {
       {/* Button Variants */}
       <div className="mt-6 flex flex-wrap gap-4">
         {/* Sizes */}
-        <Button title="Small Button" className="text-sm px-2 py-1" />
-        <Button title="Medium Button" className="text-base px-4 py-2" />
-        <Button title="Large Button" className="text-lg px-6 py-3" />
+        <Button title="Small Button" className="text-sm px-2 py-1" styles="" />
+        <Button title="Medium Button" className="text-base px-4 py-2" styles="" />
+        <Button title="Large Button" className="text-lg px-6 py-3" styles="" />
 
         {/* Shapes */}
-        <Button title="Rounded-sm" className="rounded-sm" />
-        <Button title="Rounded-md" className="rounded-md" />
-        <Button title="Rounded-full" className="rounded-full" />
+        <Button title="Rounded-sm" className="rounded-sm" styles="" />
+        <Button title="Rounded-md" className="rounded-md" styles="" />
+        <Button title="Rounded-full" className="rounded-full" styles="" />
+        <Button title="Rounded-lg" className="rounded-lg" styles="" />
       </div>
     </div>
   )
