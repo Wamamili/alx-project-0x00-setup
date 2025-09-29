@@ -4,7 +4,72 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 First, run the development server:
 
+```bash# alx-project-0x00
+
+A [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+
+## 🚀 Getting Started
+
+To start the development server, run:
+
 ```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
+
+Visit [http://localhost:3000](http://localhost:3000) in your browser to view the app.
+
+You can begin editing by modifying `pages/index.tsx`. Changes are reflected live.
+
+## 🗂️ Project Structure
+
+- `pages/` — Main app pages and API routes
+  - `index.tsx` — Home page (`/`)
+  - `landing.tsx` — Landing page (`/landing`)
+  - `about.tsx` — About page (`/about`)
+  - `api/hello.ts` — Example API route (`/api/hello`)
+- `components/` — Reusable React components (e.g., `Card`, `Pill`)
+- `interfaces/` — TypeScript interfaces and types
+- `public/` — Static assets
+- `styles/` — Global and component styles
+
+## 🧭 Routing
+
+This project uses the **Pages Router** in Next.js.  
+Available routes:
+
+- `/` — Home
+- `/landing` — Landing Page
+- `/about` — About Page
+
+API routes are available under `/api/*`, e.g., `/api/hello`.
+
+## 🧩 Components
+
+- The **Card** component is imported and used in `pages/landing.tsx`.
+- Multiple `<Card />` components are rendered to demonstrate reusability.
+- Visit [http://localhost:3000/landing](http://localhost:3000/landing) to see them in action.
+
+## 🖋️ Fonts
+
+Uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to optimize and load [Geist](https://vercel.com/font).
+
+## 📚 Learn More
+
+- [Next.js Documentation](https://nextjs.org/docs)
+- [Interactive Next.js Tutorial](https://nextjs.org/learn-pages-router)
+- [Next.js GitHub Repository](https://github.com/vercel/next.js)
+
+## 🚢 Deployment
+
+The easiest way to deploy is via [Vercel](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme).
+
+See the [Next.js deployment docs](https://nextjs.org/docs/pages/building-your-application/deploying) for more options.
 npm run dev
 # or
 yarn dev
@@ -54,4 +119,10 @@ The following routes are currently available:
 Start the development server:
 
 ```bash
-npm run dev -- -p 3000
+
+
+### Using Components
+- Imported the **Card** component into `landing.tsx`.
+- Rendered `<Card />` under the page heading.
+- Duplicated the Card multiple times to demonstrate reusability.
+- Verified rendering at [http://localhost:3000/landing](http://localhost:3000/landing).
